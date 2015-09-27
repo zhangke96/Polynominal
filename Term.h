@@ -30,7 +30,7 @@ Term::Term(int c,int e,Term *nxt):coef(c),exp(e)
 	link=nxt;
 }
 Term *Term::InsertAfter(int c,int e)                           //Insert a new Term object after the exist Term node
-{                                                              //This first  and the second link is " this->link "
+{                                                              //This first  and the second link is " this->link " equal "q1->link"
 	link=new Term(c,e,link);                                   //Befor doing the function this=q1,q1->link=q2;
 	return link;                                               //After doing the function , creat a new Term node (p) ; the Function Term(int c,int e,Term *nxt) is transfered.
 }                                                              //p->link=q1->link=q2;	q1->link=p;
